@@ -1,0 +1,14 @@
+# MegaLinter configuration file
+# See all available variables at https://megalinter.github.io/configuration/ and in linters documentation
+
+DISABLE:
+  - COPYPASTE # Comment to enable checks of excessive copy-pastes
+  - SPELL # Comment to enable checks of spelling mistakes
+SHOW_ELAPSED_TIME: true
+FILENAMES_REGEX_FILTER: '(\\.|/)(py)$'
+PYTHON_BLACK_ARGUMENTS: '--line-length=100'
+PYTHON_ISORT_ARGUMENTS: '--profile=black --line-length=100'
+PYTHON_FLAKE8_ARGUMENTS: '--max-line-length=100 --extend-ignore=E203'
+PYTHON_PYLINT_ARGUMENTS: '--rcfile=.pylintrc'
+REMOVE_CONTAINER: false
+FILES_TO_LINT: 'all'

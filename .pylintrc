@@ -1,0 +1,20 @@
+[MASTER]
+disable=
+    C0103, # variable-name
+    C0111, # missing-docstring
+    C0330, # bad-continuation
+    C1801, # len-as-condition
+    W0511, # fixme
+    W0212, # protected-access
+    R0903, # too-few-public-methods
+    R0913, # too-many-arguments
+    R0914, # too-many-locals
+
+[FORMAT]
+max-line-length=100
+
+[SIMILARITIES]
+min-similarity-lines=7
+ignore-comments=yes
+ignore-docstrings=yes
+ignore-imports=yes
